@@ -3,18 +3,6 @@ site_name: 'Easy Website'
 theme:
   name: 'material'
 
-nav:
-  - 主页: index.md
-
-  - 算法:
-    - 渐进记号: Algorithm/AsymptoticNotation.md
-    - 基本的数学函数: Algorithm/BasicMathFunction.md
-
-  - 导航标题:
-    - 子标题 1: Sample/SampleFile1.md
-    - 子标题 2: Sample/SampleFile2.md
-    
-
 extra_css:
   - '../KatexAddition/katex.css'
 
@@ -26,3 +14,15 @@ extra_javascript:
 markdown_extensions:
   - pymdownx.superfences
   - katex_math
+
+
+nav:
+  - 主页: index.md
+
+  - 算法:
+    - 渐进记号: Algorithm/AsymptoticNotation.md
+    - 基本的数学函数: Algorithm/BasicMathFunction.md
+
+  - 导航标题:
+    - 子标题 1: Sample/SampleFile1.md
+    - 子标题 2: Sample/SampleFile2.md
