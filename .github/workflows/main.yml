@@ -28,7 +28,7 @@ jobs:
 
       - name: Custom katex
         run: |
-             sudo cp docs/KatexAddition/katex_math.py $(python3 -c "import sys; print(sys.path[-1])")
+             sudo cp KatexAddition/katex_math.py $(python3 -c "import sys; print(sys.path[-1])")
              ls $(python3 -c "import sys; print(sys.path[-1])")
              python3 -c "import sys; print(sys.path)"
 
