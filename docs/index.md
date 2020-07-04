@@ -1,35 +1,30 @@
-# Notes and Thoughts
+# Easy Website 首页
 
-## 网站中查看笔记
+### 支持 Markdown 格式
 
-打开网页 https://github.com/UniverseFly/Ideas 并选择相应目录即可。
+- Item A
+- Item B
+  - Item BA
+  - Item BB
 
-**缺点**：有时候比较慢
+### Code Block
 
-## 本地保持项目同步
+```c++
+#include <iostream>
 
-### 克隆项目到本地
-
-打开 Git Bash (windows) 或 Terminal(*nix)，输入：
-
-```bash
-git clone https://github.com/UniverseFly/Ideas.git
-cd Ideas
+int main() {
+	std::cout << "Hello World!" << std::endl;
+}
 ```
 
-### 保持远端同步
+### 支持数学公式
 
-若运行 `git status` 看到有提示形如 *Your branch is behind...* 时，输入：
+行内公式 $f(x) = 2x + \frac 1 {e^{-x} + 1}$。
 
-```bash
-git pull
-```
-
-即可更新本地仓库。
-
-### 注意
-
-若手动修改了文件后会导致 `git pull` 失败，出现这种情况的解决方法之一是：
-
-- 删除整个文件夹，并回到第一步重新 `git clone` 整个仓库。
-
+整行公式：
+$$
+n! = \begin{cases}
+1 &n = 0\\
+n \cdot (n - 1)! &n \in \mathbb N^+
+\end{cases}
+$$
