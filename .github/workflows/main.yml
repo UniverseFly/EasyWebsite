@@ -1,0 +1,43 @@
+name: Publish docs via GitHub Pages
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Deploy docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@v1
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+
+      - name: Download mkdocs
+        run: |
+             pip3 install mkdocs
+             pip3 install mkdocs-material
+
+      - name: Custom katex
+        run: |
+             sudo cp docs/KatexAddition/katex_math.py $(python3 -c "import sys; print(sys.path[-1])")
+             ls $(python3 -c "import sys; print(sys.path[-1])")
+             python3 -c "import sys; print(sys.path)"
+
+      - name: Deploy docs
+        run: |
+             git remote rm origin
+             git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+             git config --global user.name "${GITHUB_ACTOR}"
+             git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+             mkdocs gh-deploy --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
