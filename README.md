@@ -22,7 +22,7 @@ Fork 结束后，在自己仓库中的 GitHub Action 模块，点击中间绿色
 
 ### 第三步：设置 GitHub Pages
 
-在自己 Fork 的仓库里，进入 Settings，找到 Options 里的 GitHub Pages 设置选项，将里面的 Sources 先切换成 master 再切换回 gh-deploy（似乎是 GitHub Action 的 bug，所以必须这么做）。
+在自己 Fork 的仓库里，进入 Settings，找到 Options 里的 GitHub Pages 设置选项，将里面的 Sources 先切换成 master 再切换回 gh-pages（似乎是 GitHub Action 的 bug，所以必须这么做）。
 
 ![image-20200704172935284](Assets/image-20200704172935284.png)
 
