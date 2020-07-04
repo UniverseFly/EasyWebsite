@@ -6,11 +6,15 @@ Typora-copy-images-to: Assets
 
 只需要四步，即可动态部署自己的个性化网页，用来写博客、做笔记等：
 
-### 第一步：Fork
+### 第一步：Fork 并开启 GitHub Action
 
 Fork 这个仓库（下图最右侧的 Fork 按钮），随后会在自己的仓库列表中下看到它：
 
 ![](Assets/image-20200704171907600.png)
+
+Fork 结束后，在自己仓库中的 GitHub Action 模块，点击中间绿色按钮开启 Action：
+
+![image-20200704182728689](Assets/image-20200704182728689.png)
 
 ### 第二步：修改示例文件
 
