@@ -4,12 +4,12 @@ theme:
   name: 'material'
 
 extra_css:
-  - '../KatexAddition/katex.css'
+  - 'KatexAddition/katex.css'
 
 extra_javascript:
-  - '../KatexAddition/katexDelimeter.js'
-  - '../KatexAddition/katex.js'
-  - '../KatexAddition/auto-render.js'
+  - 'KatexAddition/katexDelimeter.js'
+  - 'KatexAddition/katex.js'
+  - 'KatexAddition/auto-render.js'
 
 markdown_extensions:
   - pymdownx.superfences
