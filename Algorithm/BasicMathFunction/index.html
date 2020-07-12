@@ -1,0 +1,1147 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
+    
+    
+      
+        <title>基本的数学函数 - Easy Website</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.fe0cca5b.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../KatexAddition/katex.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="Easy Website" class="md-header-nav__button md-logo" aria-label="Easy Website">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Easy Website
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              基本的数学函数
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Easy Website" class="md-nav__button md-logo" aria-label="Easy Website">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Easy Website
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="主页" class="md-nav__link">
+      主页
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      算法
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="算法" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        算法
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../AsymptoticNotation/" title="渐进记号" class="md-nav__link">
+      渐进记号
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        基本的数学函数
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="基本的数学函数" class="md-nav__link md-nav__link--active">
+      基本的数学函数
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    取整函数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    模运算
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    增长率
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    多重函数
+  </a>
+  
+    <nav class="md-nav" aria-label="多重函数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    多对数
+  </a>
+  
+    <nav class="md-nav" aria-label="多对数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    性质
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stirling" class="md-nav__link">
+    斯特林（Stirling）近似公式
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    斐波那契数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" class="md-nav__link">
+    Exercises
+  </a>
+  
+    <nav class="md-nav" aria-label="Exercises">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    单调递增的性质
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n" class="md-nav__link">
+    证明 $n!$ 相关的渐进性质
+  </a>
+  
+    <nav class="md-nav" aria-label="证明 $n!$ 相关的渐进性质">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    证明命题 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    证明命题 2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    证明命题 3
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lceillog-nrceil-lceillog-log-nrceil" class="md-nav__link">
+    $\lceil\log n\rceil!$ 和 $\lceil\log \log n\rceil!$ 是否多项式有界？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loglogstar-n-logstarlog-n" class="md-nav__link">
+    $\log\log^\star n$ 和 $\log^\star\log n$ 哪个渐进更大？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kln-k-thetan-to-k-thetanln-n" class="md-nav__link">
+    证明 $k\ln k = \Theta(n) \to k = \Theta(n/\ln n)$
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    渐进记号的补充性质
+  </a>
+  
+    <nav class="md-nav" aria-label="渐进记号的补充性质">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#f-og-to-lambda-n-log-fn-olambda-n-log-gn" class="md-nav__link">
+    $f = O(g) \to \lambda n. \log f(n) = O(\lambda n. \log g(n))$
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thetafn-pm-ofn-thetafn" class="md-nav__link">
+    $\Theta(f(n)) \pm o(f(n)) = \Theta(f(n))$
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    多重函数的推广
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      导航标题
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="导航标题" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        导航标题
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sample/SampleFile1/" title="子标题 1" class="md-nav__link">
+      子标题 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sample/SampleFile2/" title="子标题 2" class="md-nav__link">
+      子标题 2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    取整函数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    模运算
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    增长率
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    多重函数
+  </a>
+  
+    <nav class="md-nav" aria-label="多重函数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    多对数
+  </a>
+  
+    <nav class="md-nav" aria-label="多对数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    性质
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stirling" class="md-nav__link">
+    斯特林（Stirling）近似公式
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    斐波那契数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" class="md-nav__link">
+    Exercises
+  </a>
+  
+    <nav class="md-nav" aria-label="Exercises">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    单调递增的性质
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#n" class="md-nav__link">
+    证明 $n!$ 相关的渐进性质
+  </a>
+  
+    <nav class="md-nav" aria-label="证明 $n!$ 相关的渐进性质">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    证明命题 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    证明命题 2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    证明命题 3
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lceillog-nrceil-lceillog-log-nrceil" class="md-nav__link">
+    $\lceil\log n\rceil!$ 和 $\lceil\log \log n\rceil!$ 是否多项式有界？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loglogstar-n-logstarlog-n" class="md-nav__link">
+    $\log\log^\star n$ 和 $\log^\star\log n$ 哪个渐进更大？
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kln-k-thetan-to-k-thetanln-n" class="md-nav__link">
+    证明 $k\ln k = \Theta(n) \to k = \Theta(n/\ln n)$
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    渐进记号的补充性质
+  </a>
+  
+    <nav class="md-nav" aria-label="渐进记号的补充性质">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#f-og-to-lambda-n-log-fn-olambda-n-log-gn" class="md-nav__link">
+    $f = O(g) \to \lambda n. \log f(n) = O(\lambda n. \log g(n))$
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thetafn-pm-ofn-thetafn" class="md-nav__link">
+    $\Theta(f(n)) \pm o(f(n)) = \Theta(f(n))$
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    多重函数的推广
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="_1">常用函数与记号</h1>
+<blockquote>
+<p>包含各种性质及其证明。</p>
+<p>TODO: 把每个变量定义域规定清楚</p>
+</blockquote>
+<h2 id="_2">取整函数</h2>
+<blockquote>
+<p>Wikipedia: <a href="https://en.wikipedia.org/wiki/Floor_and_ceiling_functions">Floor and ceiling function</a></p>
+<ul>
+<li>$\lfloor x \rfloor = \max \{i \in \mathbb Z \mid i \le x\}$</li>
+<li>$\lceil x \rceil = \min \{i \in \mathbb Z \mid i \ge x\}$</li>
+</ul>
+</blockquote>
+<p>$x - 1 &lt; \lfloor x\rfloor \le x \le \lceil x\rceil &lt; x + 1$</p>
+<ul>
+<li>设 $x = n + \alpha,\ 0 \le \alpha &lt; 1$，则 $\lfloor x\rfloor = n$。</li>
+<li>则 $x - 1 = n + \alpha - 1 &lt; n$。</li>
+<li>向上取整设 $x = n - \alpha$ 可证。</li>
+</ul>
+<p>$i + \lfloor x \rfloor = \lfloor i + x \rfloor\quad i \in \mathbb Z$</p>
+<p>$i + \lceil x \rceil = \lceil i + x \rceil\quad i \in \mathbb Z$</p>
+<ul>
+<li>设  $x = n + \alpha,\ 0 \le \alpha &lt; 1$ 即可得。</li>
+<li>向上取整设 $x = n - \alpha$ 可证。</li>
+</ul>
+<p>$\lfloor x \rfloor + \lceil -x \rceil = 0$（可以利用数轴记忆）</p>
+<ul>
+<li>设 $x = n + \alpha,\ 0 \le \alpha &lt; 1$，则 $-x = -n - \alpha$。</li>
+<li>从而有 $\lfloor x \rfloor = n, \lceil -x \rceil = -n$，所以证明了命题。</li>
+</ul>
+<p>$\lfloor n/2 \rfloor + \lceil n/2 \rfloor = n$</p>
+<p>$(n \in \Z)$</p>
+<ul>
+<li>$n/2 - 1 &lt; \lfloor n/2 \rfloor \le n/2$</li>
+<li>$n/2 \le \lceil n/2 \rceil &lt; n/2 + 1$</li>
+<li>$n - 1 &lt; \lfloor n/2 \rfloor + \lceil n/2 \rceil &lt; n + 1$</li>
+<li>由于 $\lfloor n/2 \rfloor + \lceil n/2 \rfloor$ 一定是个整数，所以它的值一定是 $n$。</li>
+</ul>
+<p>$\lceil \lceil x\rceil /n\rceil = \lceil x/n \rceil$</p>
+<p>$\lfloor \lfloor x\rfloor /n\rfloor = \lfloor x/n \rfloor$</p>
+<p>$(n &gt; 0)$</p>
+<ul>
+<li>设 $x = kn + b + \alpha,\ 0 \le b &lt; n$</li>
+<li>则 $\lfloor x \rfloor = kn + b$</li>
+<li>则 $\lfloor \lfloor x\rfloor /n\rfloor = k$</li>
+<li>同时 $\lfloor x / n \rfloor = k$</li>
+</ul>
+<p>$\lceil a/b \rceil \le (a + (b - 1))/b$</p>
+<p>$\lfloor a/b \rfloor \ge (a - (b - 1))/b$</p>
+<p>$(a, b) \in \N^+ \times \N^+$</p>
+<ul>
+<li>设 $a = kb + t$</li>
+<li>则 $\lfloor a/b \rfloor = k$</li>
+<li>$(a - (b - 1))/b = k - 1 + 1/b$</li>
+</ul>
+<h2 id="_3">模运算</h2>
+<blockquote>
+<p>$a \mod n = a - n\lfloor a/n \rfloor$</p>
+</blockquote>
+<p>由于 $a/n - 1 &lt; \lfloor a/n \rfloor \le a/n$</p>
+<p>则 $0 \le a \mod n &lt; n$</p>
+<h2 id="_4">增长率</h2>
+<p>设 $a &gt; 1$，则：
+$$
+\lim_{n \to \infty} \frac{n^b}{a^n} = 0 \\
+$$
+令 $a = 2^a(a_{\rm right} &gt; 0), n = \log n$，则：
+$$
+\lim_{n \to \infty}\frac{\log^b n}{n^a} = 0
+$$</p>
+<h2 id="_5">多重函数</h2>
+<p>$$
+f^{(i)}(n) = \begin{cases}
+    n &amp;i = 0 \\
+    f(f^{(i-1)}(n)) &amp;i &gt; 0 \\
+\end{cases}
+$$</p>
+<p>可以证明，$f^{(a)}(f^{(b)}(n)) = f^{(a + b)}(n)$。</p>
+<blockquote>
+<p>对 $a$ 作归纳。</p>
+</blockquote>
+<h3 id="_6">多对数</h3>
+<p>$\log^\star n = \min \{i \ge 0 \mid \log ^{(i)} n \le 1\}$</p>
+<h4 id="_7">性质</h4>
+<p>$\log^\star 2^k = \log^\star k + 1$</p>
+<blockquote>
+<p>用 <code>\star</code> 代替 <code>*</code>，否则 <code>mkdocs build</code> 后会识别成 markdown 的斜体表示。</p>
+</blockquote>
+<ul>
+<li>设 $\log^\star 2^k = j$</li>
+<li>则 $\log^{(j)} 2^k = \log ^{(j - 1)} \log 2^k = \log^{(j - 1)} = \log^{(j - 1)} k$</li>
+<li>所以 $\log ^\star k = j - 1$</li>
+</ul>
+<h2 id="stirling">斯特林（Stirling）近似公式</h2>
+<p>$$
+n! = \sqrt{2\pi n}(\frac{n}{e})^n(1 + \Theta(\frac{1}{n}))
+$$</p>
+<h2 id="_8">斐波那契数</h2>
+<p>$$
+F_0 = 0 \\
+F_1 = 1 \\
+F_i = F_{i-1} + F_{i-2}
+$$</p>
+<p><strong>通项公式</strong></p>
+<ul>
+<li>
+<p>设 $x^2 = x + 1$ 的两个解为 $\phi = (1 + \sqrt 5)/2$ 和 $\hat\phi = (1 - \sqrt 5) / 2$（这里的 $\phi$ 称之为黄金分割率），</p>
+</li>
+<li>
+<p>则 $F_i = (\phi^i - \hat \phi^i) / \sqrt 5$。（数学归纳法）</p>
+</li>
+</ul>
+<p><strong>通项公式（取整形式）</strong></p>
+<ul>
+<li>
+<p>由于 $|\hat \phi ^ i| / \sqrt 5 &lt;  1 / 2$，</p>
+</li>
+<li>
+<p>则 $\phi^i / \sqrt 5 - 1/2 &lt; \lfloor \phi^i / \sqrt 5 + 1/2 \rfloor \le \phi^i / \sqrt 5 + 1/2$，</p>
+</li>
+<li>
+<p>$F_i$ 正好是这个范围内的唯一整数，</p>
+</li>
+<li>
+<p>所以 $F_i = \lfloor \phi^i / \sqrt 5 + 1/2 \rfloor$。</p>
+</li>
+</ul>
+<h2 id="exercises">Exercises</h2>
+<h3 id="_9">单调递增的性质</h3>
+<blockquote>
+<p>假设 $f$ 和 $g$ 都单调递增（定义域均为 $\mathbb N$），证明 $\lambda n. f(n) + g(n)$、$n \mapsto f(g(n))$ 单调递增。</p>
+</blockquote>
+<p><strong>Case 1</strong></p>
+<ul>
+<li>$m \le n \to f(m) \le f(n)$</li>
+<li>$m \le n \to g(m) \le g(n)$</li>
+<li>$m \le n \to f(m) + g(m) \le f(n) + g(n)$。</li>
+</ul>
+<p><strong>Case 2</strong></p>
+<ul>
+<li>$m \le n \to g(m) \le g(n)$</li>
+<li>$g(m) \le g(n) \to f(g(m)) \le f(g(n))$</li>
+<li>$m \le n \to f(g(m)) \le f(g(n))$</li>
+</ul>
+<h3 id="n">证明 $n!$ 相关的渐进性质</h3>
+<blockquote>
+<p>证明下述命题：</p>
+<ul>
+<li>
+<p>$\log n! = \Theta(n\log n)$</p>
+</li>
+<li>
+<p>$n! = o(n^n)$</p>
+</li>
+<li>$n! = \omega(2^n)$</li>
+</ul>
+</blockquote>
+<h4 id="1">证明命题 1</h4>
+<p><strong>利用 Stirling 近似公式</strong></p>
+<p>我们可以得到 $n! = \sqrt{2\pi n}(\frac{n}{e})^n(1 + f(n))\quad f \in \Theta(n \mapsto 1/n)$。</p>
+<p>所以有：</p>
+<ul>
+<li>$\log n! = \log \sqrt {2\pi n} + \log((n/e)^n) + \log(1 + f(n))$</li>
+<li>$\log n! = \frac 1 2 \log {2\pi n} + n\log n - n\log e + \log(1 + f(n))$。</li>
+</ul>
+<p>当 $n$ 很大的时候有：</p>
+<ul>
+<li>
+<p>$f(n) \in [c_1/n, c_2 / n]$</p>
+</li>
+<li>
+<p>$\log (1 + f(n)) \in [\log(1 + c_1/n), \log(1 + c_2 / n)]$</p>
+</li>
+</ul>
+<blockquote>
+<p>直观上，这个区间渐进趋近于 $[0, 0]$，因为 $\log 1 = 0$。</p>
+</blockquote>
+<ul>
+<li>
+<p>可以看出 $n\log n$ 是阶数最大的，所以其他每一项都 $\le c_\mathrm{someAnonymous} n\log n$（在这个 $n$ 很大的情况下）。</p>
+</li>
+<li>
+<p>随后改写一下等式有 $\log n! = n\log n + \phi(n)$，其中 $\phi(n) \le cn\log n$</p>
+</li>
+</ul>
+<blockquote>
+<p>$\phi(n) = \frac 1 2 \log {2\pi n} - n\log e + \log(1 + f(n))$</p>
+</blockquote>
+<ul>
+<li>
+<p>因此有 $\log n! \le (1 +c) n\log n$</p>
+</li>
+<li>
+<p>同时由于 $n\log e = o(n\log n)$，因此 $n\log e \le \frac 1 2 n\log n$</p>
+</li>
+<li>
+<p>则有 $\phi(n) \ge 0 - n\log e \ge -\frac 1 2 n\log n$</p>
+</li>
+<li>
+<p>因此有 $\log n! \ge \frac 1 2n\log n$。</p>
+</li>
+</ul>
+<p><strong>利用积分与求和的不等式关系</strong></p>
+<blockquote>
+<p>$$
+\int_{m-1}^n f(x)\mathrm dx \le \sum_{k=m}^nf(k) \le \int_m^{n+1} f(x) \mathrm dx \quad f \text{ is monotonically increasing}\\
+\int_{m}^{n+1} f(x) \mathrm dx \le \sum_{k=m}^nf(k) \le \int_{m-1}^n f(x)\mathrm dx \quad f\text{ is monotonically decreasing}
+$$</p>
+<p>上面的性质可以利用定积分与面积的关系不严谨的得出。</p>
+</blockquote>
+<p>利用上述性质可以得出：</p>
+<ul>
+<li>$\log n! = \sum_{k = 1}^n \log k$</li>
+<li>$\sum_{k=1}^n \log k \le \int_1^{n+1} \log x \mathrm dx = \frac 1 {\ln 2}(x\ln n -x)|_1^{n+1} = (n\ln n - n)/\ln 2 \le n\log n$。</li>
+<li>$\sum_{k=1}^n \log k = \sum_{k=2}^n \log k \ge \int_1^n \log x \mathrm dx = ((n-1)\ln n - (n-1))/\ln 2 = (n-1)\log (n/e)$</li>
+<li>$(n-1)\log (n/e) = n\log n - n\log e - \log n/e$</li>
+<li>由于 $n\log e$ 和 $\log n/e$ 都是 $o(n\log n)$，则 $n$ 很大时它们都 $\le (n\log n)/4$</li>
+<li>那么就有 $n\log n - n\log e - \log n/e \ge (n\log n)/2$</li>
+</ul>
+<p>因此最后可以得到 $\log n! \in \Theta(n\log n)$。</p>
+<h4 id="2">证明命题 2</h4>
+<ul>
+<li>$n! / n^n = n/n \cdot (n-1)/n \cdots 1/n \le n/n \cdot (n - 1) / n \cdot (n - 2) / (n - 1) \cdots 2/3 \cdot 1/2 = 1/n$。</li>
+<li>所以 $0 \le n!/n^n \le 1/n$，根据夹逼定理有 $\lim_{n \to \infty}n!/n^n = 0$。</li>
+<li>所以 $n! = o(n^n)$</li>
+</ul>
+<h4 id="3">证明命题 3</h4>
+<ul>
+<li>$0 \le 2^n / n! = \frac 2 1 \cdot \frac 2 {2} \cdots \frac 2 n \le \frac 4 n\quad \text{when }n\text{ is large}$（放缩）。</li>
+<li>根据夹逼定理，它的极限是 $0$。</li>
+<li>因此有 $2^n = o(n!)$，同时 $n! = \omega(2^n)$。</li>
+</ul>
+<h3 id="lceillog-nrceil-lceillog-log-nrceil">$\lceil\log n\rceil!$ 和 $\lceil\log \log n\rceil!$ 是否多项式有界？</h3>
+<blockquote>
+<p>$f$ 多项式有界等价于 $f \in O(n \mapsto n^k)\quad  k \in \mathbb R$。</p>
+</blockquote>
+<p>对于 $\lceil\log n\rceil!$</p>
+<ul>
+<li>假设 $n = 2^p$，则 $\lceil\log n\rceil! = \lceil p\rceil!$</li>
+<li>$n^k = 2^{pk} = (2^k)^p = c^p\quad c = 2^k$</li>
+<li>由于阶乘比指数阶数高，有 $\lim_{p \to \infty}\frac {\lceil p\rceil!} {c^p} = \infty$。</li>
+<li>所以 $\lceil \log n \rceil! = \omega(n^k)$</li>
+</ul>
+<p>对于 $\lceil\log\log n\rceil!$，我们令 $k = 1$</p>
+<ul>
+<li>假设 $n = 2^{2^p}$，则 $\lceil\log\log n\rceil! = \lceil p\rceil!$</li>
+<li>同时 $n^k = n^1 =  2^{2^p}$</li>
+<li>$p &gt; \lceil p \rceil - 1$，所以 $2^{2^p} &gt; 2^{2^{\lceil p \rceil - 1}}$。</li>
+<li>数学归纳法可以知道 $2^{2^{\lceil p\rceil - 1}} &gt; \lceil p \rceil!$</li>
+<li>所以$\lceil p \rceil! \le n$</li>
+<li>$\lceil\log\log n\rceil! = O(n)$。</li>
+</ul>
+<h3 id="loglogstar-n-logstarlog-n">$\log\log^\star n$ 和 $\log^\star\log n$ 哪个渐进更大？</h3>
+<blockquote>
+<p>$\log^\star 2^k = \log^\star k + 1$</p>
+</blockquote>
+<p>$$
+\begin{aligned}
+\lim_{n\to\infty}\frac {\log\log^\star n} {\log^\star\log n} &amp;= \lim_{n\to\infty}\frac{\log(\log^\star n + 1)}{\log^\star n} &amp;n := 2^n\\
+  &amp;= \lim_{n\to\infty} \frac {\log(n + 1)} {n} &amp;\log^\star n := n\\
+  &amp;= 0
+\end{aligned}
+$$</p>
+<p>所以 $\log\log^\star n = o(\log^\star\log n)$。</p>
+<h3 id="kln-k-thetan-to-k-thetanln-n">证明 $k\ln k = \Theta(n) \to k = \Theta(n/\ln n)$</h3>
+<blockquote>
+<p>这里 $k$ 是关于 $n$ 的表达式。</p>
+</blockquote>
+<p>当 $n$ 很大时：</p>
+<ul>
+<li>$k\ln k \in[c_1n, c_2 n]$</li>
+<li>$k \in [c_1\frac n {\ln k}, c_2\frac n {\ln k}]$</li>
+<li>$\ln k + \ln \ln k \in [\ln c_1n, \ln c_2n]$</li>
+<li>$\ln n \in [\ln k + \ln\ln k - \ln c_2, \ln k + \ln\ln k - c_1]$</li>
+<li>$\ln n = \Theta(\ln k)$</li>
+<li>$\ln k = \Theta(\ln n)$</li>
+<li>$\ln k \in [c_3\ln n, c_4\ln n]$</li>
+<li>
+<p>$k \in [\frac {c_1}{c_4}\frac n {\ln n}, \frac{c_2}{c_3} \frac n {\ln n}]$</p>
+</li>
+<li>
+<p>$k = \Theta(n/\ln n)$</p>
+</li>
+</ul>
+<h3 id="_10">渐进记号的补充性质</h3>
+<h4 id="f-og-to-lambda-n-log-fn-olambda-n-log-gn">$f = O(g) \to \lambda n. \log f(n) = O(\lambda n. \log g(n))$</h4>
+<blockquote>
+<p>这里有当 $n$ 很大时，$\log g(n) \ge 1$ 且 $f(n) \ge 1$。</p>
+</blockquote>
+<p>$n$ 很大时：</p>
+<ul>
+<li>
+<p>$1 \le f(n) \le cg(n)$</p>
+</li>
+<li>
+<p>$\log f(n) \le \log cg(n) = \log g(n) + \log c$</p>
+</li>
+</ul>
+<blockquote>
+<p>如果 $\log c \le 0$，那么 $\log f(n) \le \log g(n)$，命题成立。下面考虑 $\log c &gt; 0$。</p>
+</blockquote>
+<ul>
+<li>
+<p>$\log g(n) \ge 1$</p>
+</li>
+<li>
+<p>$\log c \log g(n) \ge \log c$</p>
+</li>
+<li>
+<p>$\log f(n) \le (1 + \log c)\log g(n)$</p>
+</li>
+</ul>
+<p>所以命题成立。</p>
+<h4 id="thetafn-pm-ofn-thetafn">$\Theta(f(n)) \pm o(f(n)) = \Theta(f(n))$</h4>
+<blockquote>
+<p>严谨的写：$\lambda n. g(n) \pm h(n) \in \Theta(f)\quad g \in \Theta(f), h \in o(f)$。</p>
+</blockquote>
+<p>$n$ 很大时：</p>
+<ul>
+<li>$g(n) \in [c_1f(n), c_2f(n)]$</li>
+<li>$\forall c &gt; 0(h(n) &lt; cf(n))$</li>
+</ul>
+<p>$+$ 号的情况</p>
+<ul>
+<li>$0 \le h(n) \le f(n)$</li>
+<li>$g(n) + h(n) \le (c_1 + 1)f(n)$</li>
+<li>$g(n) + h(n) \ge g(n) \ge c_1f(n)$</li>
+<li>所以 $g(n) + h(n) = \Theta(f(n))$</li>
+</ul>
+<p>$-$ 号的情况</p>
+<ul>
+<li>$0 \le h(n) \le \frac {c_1} 2f(n)$</li>
+<li>$g(n) - h(n) \le g(n) \le c_2f(n)$</li>
+<li>$g(n) - h(n) \ge \frac {c_1} 2 f(n)$</li>
+<li>所以 $g(n) - h(n) = \Theta(f(n))$</li>
+</ul>
+<h3 id="_11">多重函数的推广</h3>
+<blockquote>
+<p>对于给定的常量 $c \in \mathbb R$，若 $f$ 单调递增，则 $f_c^\star(x) = \min \{i \ge 0 \mid f^{(i)}(x) \le c\}$。</p>
+</blockquote>
+<p>例如，当 $f(x) = x - 1$，$c = 0$ 时：</p>
+<ul>
+<li>
+<p>$f^{(i)}(x) = x  - i$（数学归纳法证明）</p>
+</li>
+<li>
+<p>$f^\star_0(x) = \min\{i \ge 0 \mid x - i \le 0\} = \min\{i \ge 0 \mid i \ge x\} = \max(0, \lceil x \rceil)$。</p>
+</li>
+</ul>
+<blockquote>
+<p>如果没有 $i \ge 0$，根据定义结果应该是 $\lceil x\rceil$。因为有 $i \ge 0$，所以会考虑是否 $x &gt; 0$ 两种情况。</p>
+</blockquote>
+<p>又如，当 $f(x) = \sqrt x$，$c = 1$，时：</p>
+<ul>
+<li>当 $x &gt; 1$ 时，$\sqrt x &gt; 1$，所以 $\sqrt {\sqrt {\cdots \sqrt x}} &gt; 1$，$f^{(i)}(x) &gt; 1$</li>
+<li>此时 $f_1^\star(x) = \min\{i \ge 0 \mid f^{(i)}(x) \le 1\}$</li>
+<li>因此当 $x &gt; 1$ 时没有定义。</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../AsymptoticNotation/" title="渐进记号" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                渐进记号
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../../Sample/SampleFile1/" title="子标题 1" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                子标题 1
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.a68abb33.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="../../KatexAddition/katexDelimeter.js"></script>
+      
+        <script src="../../KatexAddition/katex.js"></script>
+      
+        <script src="../../KatexAddition/auto-render.js"></script>
+      
+    
+  </body>
+</html>
