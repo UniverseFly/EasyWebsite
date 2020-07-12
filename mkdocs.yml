@@ -12,9 +12,7 @@ extra_javascript:
   - 'KatexAddition/auto-render.js'
 
 markdown_extensions:
-  - codehilite:
-      linenums: true
-  - pymdownx.superfences
+  - codehilite
   - katex_math
 
 
